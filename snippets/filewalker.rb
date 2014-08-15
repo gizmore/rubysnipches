@@ -2,14 +2,17 @@
 ### Offers convinient filesystem traversal functionality.
 ###
 ### Examples:
-### Filewalker.proc('/tmp)
-### 
+### Filewalker.proc_dirs('/tmp') do |file, dir|
+###   puts "#{dir} is a dir in /tmp"
+### end
+###
 ### License: none?
 ### Author: gizmore@wechall.net
 ###
 ### Tested with:
-### [+] Ruby 2.1.1
+### [+] Ruby 2.x
 ###
+### Needs some stuff from string_helpers -.-
 ###
 class Filewalker
   
